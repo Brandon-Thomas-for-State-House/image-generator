@@ -1,0 +1,20 @@
+.component {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+
+.fields {
+  flex: 1;
+  padding: 30px;
+}
+
+.preview {
+  flex: 1;
+  margin: 30px;
+}
+
+.field {
+  margin-bottom: 30px;
+}

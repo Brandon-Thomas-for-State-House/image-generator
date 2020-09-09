@@ -1,0 +1,38 @@
+.component {
+  width: 50%;
+  position: relative;
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.case {
+  position: absolute;
+  right: 0px;
+  padding-right: 30px;
+  text-align: right;
+}
+.title {
+  font-family: "Barlow Condensed", sans-serif;
+  width: 300px;
+  word-spacing: 300px;
+  font-size: 60px;
+  line-height: 54px;
+
+  font-weight: 700;
+  color: #354e98;
+}
+
+.candidate {
+  color: white;
+}
+.tagline {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  border-top: 8px solid #b13539;
+  display: inline-block;
+  margin-top: 15px;
+  padding-top: 5px;
+  color: #354e98;
+}
