@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/image-generator/static/css/main.a81c26d6.chunk.css",
+    "main.js": "/image-generator/static/js/main.7260938b.chunk.js",
+    "main.js.map": "/image-generator/static/js/main.7260938b.chunk.js.map",
+    "runtime-main.js": "/image-generator/static/js/runtime-main.2ab25bc7.js",
+    "runtime-main.js.map": "/image-generator/static/js/runtime-main.2ab25bc7.js.map",
+    "static/css/2.aa2137b1.chunk.css": "/image-generator/static/css/2.aa2137b1.chunk.css",
+    "static/js/2.4b2cbb90.chunk.js": "/image-generator/static/js/2.4b2cbb90.chunk.js",
+    "static/js/2.4b2cbb90.chunk.js.map": "/image-generator/static/js/2.4b2cbb90.chunk.js.map",
+    "index.html": "/image-generator/index.html",
+    "precache-manifest.2560fbf1a911e3a191b45517092b23b4.js": "/image-generator/precache-manifest.2560fbf1a911e3a191b45517092b23b4.js",
+    "service-worker.js": "/image-generator/service-worker.js",
+    "static/css/2.aa2137b1.chunk.css.map": "/image-generator/static/css/2.aa2137b1.chunk.css.map",
+    "static/css/main.a81c26d6.chunk.css.map": "/image-generator/static/css/main.a81c26d6.chunk.css.map",
+    "static/js/2.4b2cbb90.chunk.js.LICENSE.txt": "/image-generator/static/js/2.4b2cbb90.chunk.js.LICENSE.txt",
+    "static/media/UploadIcon.svg": "/image-generator/static/media/UploadIcon.1cedb6e9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ab25bc7.js",
+    "static/css/2.aa2137b1.chunk.css",
+    "static/js/2.4b2cbb90.chunk.js",
+    "static/css/main.a81c26d6.chunk.css",
+    "static/js/main.7260938b.chunk.js"
+  ]
+}
