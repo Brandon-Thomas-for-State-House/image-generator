@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58239aad54664c5effbbb6f5b92103cf",
+    "revision": "8f1af7f0055ae9f184eb65992fb7d213",
     "url": "/image-generator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-generator/static/css/2.aa2137b1.chunk.css"
   },
   {
-    "revision": "f2f9bdaeb14b6affae06",
+    "revision": "27cc1a39ef97cb4ad03a",
     "url": "/image-generator/static/css/main.9175e775.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-generator/static/js/2.75d3dbe0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2f9bdaeb14b6affae06",
-    "url": "/image-generator/static/js/main.34b2afc6.chunk.js"
+    "revision": "27cc1a39ef97cb4ad03a",
+    "url": "/image-generator/static/js/main.016c25df.chunk.js"
   },
   {
     "revision": "6fcc7e6b93ceab6be44d",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/image-generator/static/media/UploadIcon.1cedb6e9.svg"
   },
   {
-    "revision": "4b929c6f1c6ca9bed1c2cf5e411d5a7f",
-    "url": "/image-generator/static/media/brandon.4b929c6f.png"
+    "revision": "de8f5109c1c5e29cb2e237ef4680d90a",
+    "url": "/image-generator/static/media/brandon.de8f5109.jpg"
   }
 ]);
