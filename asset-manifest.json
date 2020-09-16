@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/image-generator/static/css/main.9436e9e9.chunk.css",
-    "main.js": "/image-generator/static/js/main.e3e4f2e7.chunk.js",
-    "main.js.map": "/image-generator/static/js/main.e3e4f2e7.chunk.js.map",
+    "main.css": "/image-generator/static/css/main.e5e06386.chunk.css",
+    "main.js": "/image-generator/static/js/main.d4d69823.chunk.js",
+    "main.js.map": "/image-generator/static/js/main.d4d69823.chunk.js.map",
     "runtime-main.js": "/image-generator/static/js/runtime-main.2ab25bc7.js",
     "runtime-main.js.map": "/image-generator/static/js/runtime-main.2ab25bc7.js.map",
     "static/css/2.aa2137b1.chunk.css": "/image-generator/static/css/2.aa2137b1.chunk.css",
-    "static/js/2.a49ab179.chunk.js": "/image-generator/static/js/2.a49ab179.chunk.js",
-    "static/js/2.a49ab179.chunk.js.map": "/image-generator/static/js/2.a49ab179.chunk.js.map",
+    "static/js/2.350fd6bc.chunk.js": "/image-generator/static/js/2.350fd6bc.chunk.js",
+    "static/js/2.350fd6bc.chunk.js.map": "/image-generator/static/js/2.350fd6bc.chunk.js.map",
     "index.html": "/image-generator/index.html",
-    "precache-manifest.d585570c1db653601b668690f72d40de.js": "/image-generator/precache-manifest.d585570c1db653601b668690f72d40de.js",
+    "precache-manifest.98db67521d880c3336fe8923fe376bb8.js": "/image-generator/precache-manifest.98db67521d880c3336fe8923fe376bb8.js",
     "service-worker.js": "/image-generator/service-worker.js",
     "static/css/2.aa2137b1.chunk.css.map": "/image-generator/static/css/2.aa2137b1.chunk.css.map",
-    "static/css/main.9436e9e9.chunk.css.map": "/image-generator/static/css/main.9436e9e9.chunk.css.map",
-    "static/js/2.a49ab179.chunk.js.LICENSE.txt": "/image-generator/static/js/2.a49ab179.chunk.js.LICENSE.txt",
+    "static/css/main.e5e06386.chunk.css.map": "/image-generator/static/css/main.e5e06386.chunk.css.map",
+    "static/js/2.350fd6bc.chunk.js.LICENSE.txt": "/image-generator/static/js/2.350fd6bc.chunk.js.LICENSE.txt",
     "static/media/UploadIcon.svg": "/image-generator/static/media/UploadIcon.1cedb6e9.svg",
     "static/media/brandon.png": "/image-generator/static/media/brandon.4b929c6f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2ab25bc7.js",
     "static/css/2.aa2137b1.chunk.css",
-    "static/js/2.a49ab179.chunk.js",
-    "static/css/main.9436e9e9.chunk.css",
-    "static/js/main.e3e4f2e7.chunk.js"
+    "static/js/2.350fd6bc.chunk.js",
+    "static/css/main.e5e06386.chunk.css",
+    "static/js/main.d4d69823.chunk.js"
   ]
 }
