@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96c0b31a3f5b86fb42a1a2c18462d1af",
+    "revision": "88de992d76ed5395fb65ad88966dbfdb",
     "url": "/image-generator/index.html"
   },
   {
-    "revision": "60fbb68b8cf8eb4201bf",
+    "revision": "ea9b50675d20f22fc8c1",
     "url": "/image-generator/static/css/2.aa2137b1.chunk.css"
   },
   {
-    "revision": "40b0b80df16a361af662",
-    "url": "/image-generator/static/css/main.3283aec6.chunk.css"
+    "revision": "f3d1ce4d4302566a80a9",
+    "url": "/image-generator/static/css/main.d7d05a6d.chunk.css"
   },
   {
-    "revision": "60fbb68b8cf8eb4201bf",
-    "url": "/image-generator/static/js/2.1949754a.chunk.js"
+    "revision": "ea9b50675d20f22fc8c1",
+    "url": "/image-generator/static/js/2.235b9799.chunk.js"
   },
   {
     "revision": "27dcc0fc8fb4f4b84ae99a4b073d839a",
-    "url": "/image-generator/static/js/2.1949754a.chunk.js.LICENSE.txt"
+    "url": "/image-generator/static/js/2.235b9799.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40b0b80df16a361af662",
-    "url": "/image-generator/static/js/main.376d31f3.chunk.js"
+    "revision": "f3d1ce4d4302566a80a9",
+    "url": "/image-generator/static/js/main.44d7481d.chunk.js"
   },
   {
     "revision": "6fcc7e6b93ceab6be44d",
