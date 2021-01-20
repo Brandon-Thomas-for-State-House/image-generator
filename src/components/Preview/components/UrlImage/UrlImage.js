@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Image } from "react-konva";
 
+const EXCLUDED_PROPS = ["src"];
 export class UrlImage extends Component {
   state = {
     image: null
@@ -22,23 +23,22 @@ export class UrlImage extends Component {
     // save to "this" to remove "load" handler on unmount
     this.image = new window.Image();
     this.image.src = this.props.src;
-    this.image.width = this.props.width;
-    this.image.height = this.props.height;
     this.image.addEventListener("load", this.handleLoad);
   }
   applyCache() {
-    this.imageNode.cache();
-    this.imageNode.getLayer().batchDraw();
+    // this.imageNode.cache();
+    // this.imageNode.getLayer().batchDraw();
   }
   handleLoad = () => {
-    // after setState react-konva will update canvas and redraw the layer
-    // because "image" property is changed
     this.setState({
       image: this.image
     });
-    // if you keep same image object during source updates
-    // you will have to update layer manually:
-    // this.imageNode.getLayer().batchDraw();
+  };
+
+  filteredProps = () => {
+    return Object.keys(this.props)
+      .filter(f => !EXCLUDED_PROPS.includes(f))
+      .reduce((sum, el) => ({ ...sum, [el]: this.props[el] }), {});
   };
 
   render() {
@@ -48,7 +48,7 @@ export class UrlImage extends Component {
         ref={node => {
           this.imageNode = node;
         }}
-        {...this.props}
+        {...this.filteredProps()}
       />
     );
   }

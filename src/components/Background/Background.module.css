@@ -1,14 +1,8 @@
 .component {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   z-index: -1;
   top: 0;
   left: 0;
-}
-
-.accent {
-  width: 50%;
-  background: #20a8df;
-  height: 100vh;
 }

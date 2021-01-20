@@ -1,0 +1,11 @@
+.component {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.link {
+  display: block;
+  padding: 5px;
+}

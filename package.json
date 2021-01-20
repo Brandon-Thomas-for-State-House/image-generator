@@ -17,6 +17,8 @@
     "konva": "^7.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-easy-crop": "^3.1.1",
+    "react-ga": "^3.1.2",
     "react-images-upload": "^1.2.8",
     "react-konva": "^16.13.0-6",
     "react-scripts": "3.4.3",

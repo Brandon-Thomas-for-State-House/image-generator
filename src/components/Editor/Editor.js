@@ -3,44 +3,33 @@ import React from "react";
 import style from "./Editor.module.css";
 import Preview from "../Preview/Preview.js";
 import Field from "../Field/Field.js";
-
+import DownloadButton from "./components/DownloadButton/DownloadButton.js";
+import { Stage } from "react-konva";
+import { CONFIGS, REQUIRED_KEYS } from "../../lib/config.js";
+import { type Config } from "../../lib/config.js";
 type Props = {};
 
-const config = {
-  name: {
-    required: true,
-    type: "text",
-    label: "Name"
-  },
-  title: {
-    required: true,
-    type: "text",
-    label: "Title"
-  },
-  location: {
-    type: "text",
-    label: "Location"
-  },
-  reason: {
-    multiline: true,
-    type: "text",
-    label: "Reason for Support"
-  },
-  profile: {
-    type: "image",
-    label: "image "
-  }
+export type Form = {
+  name: string,
+  title: string,
+  location: string,
+  reason: string,
+  profile: string,
+  canCampaignUse: string
 };
-
-export type Form = {};
 
 type State = {
   form: Form
 };
 
 export default class Editor extends React.Component<Props, State> {
+  stageRef: typeof Stage;
+
   state = {
-    form: Object.keys(config).reduce((m, k: string) => ({ ...m, [k]: k }), {})
+    form: Object.keys(CONFIGS).reduce(
+      (m, k: string) => ({ ...m, [k]: CONFIGS[k].defaultValue }),
+      {}
+    )
   };
 
   handleFormChange = (name: string): (string => void) => (value: string) => {
@@ -52,26 +41,56 @@ export default class Editor extends React.Component<Props, State> {
     }));
   };
 
+  hasRequired = () => {
+    return REQUIRED_KEYS.every(k => !!this.state.form[k]);
+  };
+
+  handleSetStageRef = (node: typeof Stage) => {
+    this.stageRef = node;
+  };
+
+  renderField(config: Config, value: any, onChange: any => void, key: string) {
+    return (
+      <div key={key} className={style.field}>
+        <Field config={config} value={value} onChange={onChange} />
+      </div>
+    );
+  }
+
+  buildTrackingData(form: Form) {
+    return form && form.canCampaignUse
+      ? form
+      : Object.keys(form).reduce(
+          (m, k) => ({ ...m, [k]: (form[k] || "").length }),
+          {}
+        );
+  }
+
   render() {
     const { form } = this.state;
 
     return (
-      <div className={style.component}>
-        <div className={style.fields}>
-          {Object.keys(form).map(k => (
-            <div key={k} className={style.field}>
-              <Field
-                config={config[k]}
-                value={form[k]}
-                onChange={this.handleFormChange(k)}
-              />
-            </div>
-          ))}
-        </div>
+      <main role="main" className={style.component}>
         <div className={style.preview}>
-          <Preview {...form} />
+          <Preview
+            onSetStageRef={this.handleSetStageRef}
+            hasRequired={this.hasRequired()}
+            {...form}
+          />
         </div>
-      </div>
+        <div className={style.fields}>
+          {Object.keys(form).map(k =>
+            this.renderField(CONFIGS[k], form[k], this.handleFormChange(k), k)
+          )}
+          {this.stageRef && (
+            <DownloadButton
+              name={form.name}
+              stageRef={this.stageRef}
+              trackingData={this.buildTrackingData(form)}
+            />
+          )}
+        </div>
+      </main>
     );
   }
 }

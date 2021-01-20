@@ -3,18 +3,63 @@
   display: flex;
   justify-content: center;
   width: 1000px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .fields {
   flex: 1;
-  padding: 30px;
+  padding: 0 30px;
+  margin-bottom: 50px;
 }
 
 .preview {
   flex: 1;
-  margin: 30px;
+  margin: 0 30px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 0 5px;
+  background: white;
+  margin-bottom: 50px;
 }
 
 .field {
   margin-bottom: 30px;
+}
+
+.hint {
+  display: none;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+}
+
+@media (max-width: 1000px) {
+  .component {
+    display: block;
+  }
+  .preview {
+    margin: 30px auto;
+    width: 430px;
+    border: solid white 10px;
+  }
+
+  .fields {
+    margin-bottom: 0;
+  }
+
+  .component {
+    width: 100%;
+  }
+  .hint {
+    display: block;
+  }
+}
+
+@media (max-width: 430px) {
+  .preview {
+    border-radius: 0;
+    width: 100%;
+    padding: 20px;
+  }
 }

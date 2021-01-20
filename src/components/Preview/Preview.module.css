@@ -1,7 +1,60 @@
+:export {
+  white: #f2f0f1;
+  lightBlue: #37acdf;
+  darkBlue: #354e98;
+  red: #b13539;
+}
+
 .title {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   text-align: left;
   font-size: 24px;
   margin-bottom: 5px;
+  color: #354e98;
+}
+
+.button {
+  width: 400px;
+  padding: 5px;
+  color: white;
+  background: #b13539;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  display: block;
+  border: none;
+}
+
+.empty {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 24px;
+  color: #354e98;
+}
+
+.disclaimer {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  padding-top: 5px;
+  color: #354e98;
+  text-align: center;
+  width: 400px;
+}
+
+.highlight {
+  color: #37acdf;
+}
+
+@media (max-width: 1000px) {
+  .button,
+  .disclaimer {
+    width: 100%;
+  }
 }

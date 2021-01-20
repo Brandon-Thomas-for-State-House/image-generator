@@ -1,21 +1,20 @@
 .component {
-  width: 50%;
+  width: 100%;
   position: relative;
-  height: 300px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  background: #5fbce5;
+  text-align: center;
+  padding: 50px;
 }
 
-.case {
+/* .case {
   position: absolute;
   right: 0px;
   padding-right: 30px;
   text-align: right;
-}
+} */
 .title {
   font-family: "Barlow Condensed", sans-serif;
-  width: 300px;
-  word-spacing: 300px;
   font-size: 60px;
   line-height: 54px;
 
@@ -25,6 +24,7 @@
 
 .candidate {
   color: white;
+  display: block;
 }
 .tagline {
   font-size: 20px;
@@ -35,4 +35,10 @@
   margin-top: 15px;
   padding-top: 5px;
   color: #354e98;
+}
+
+@media (max-width: 1000px) {
+  .component {
+    width: 100%;
+  }
 }
